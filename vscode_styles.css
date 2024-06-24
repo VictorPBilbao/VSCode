@@ -1,0 +1,16 @@
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top>.tab-border-top-container,
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.selected.tab-border-top>.tab-border-top-container {
+    height: 4px;
+    top: 0;
+    z-index: 6;
+    background-color: var(--tab-border-top-color);
+    background-image: linear-gradient(to right, #11998f, #d13abd, #efbd8a, #11998f);
+    background-size: 200% auto;
+    animation: borderTopActive 4s linear infinite;
+}
+
+@keyframes borderTopActive {
+    to {
+        background-position: 200%;
+    }
+}
